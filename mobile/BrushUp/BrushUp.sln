@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "BrushUp", "BrushUp.njsproj", "{B58BBCB0-E204-414D-A0C9-E740567F6841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B58BBCB0-E204-414D-A0C9-E740567F6841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58BBCB0-E204-414D-A0C9-E740567F6841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58BBCB0-E204-414D-A0C9-E740567F6841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58BBCB0-E204-414D-A0C9-E740567F6841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E996D572-0BCC-489D-8A02-4C9FD2EF0041}
+	EndGlobalSection
+EndGlobal
