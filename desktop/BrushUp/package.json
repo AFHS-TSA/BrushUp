@@ -1,12 +1,21 @@
 {
-    "name": "brush-up",
-    "version": "0.0.0",
-    "description": "BrushUp",
-    "main": "app.js",
-    "author": {
-        "name": ""
-    },
-    "dependencies": {
-        "electron": "2.0.10"
-    }
+  "name": "brush-up",
+  "version": "0.0.0",
+  "description": "BrushUp",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "dist:linux": "electron-packager . brushup --overwrite --asar --platform=linux --arch=x64 --prune=true --out=dist",
+    "dist:win": "electron-packager . brushup --overwrite --asar --platform=win32 --arch=ia32 --prune=true --out=dist",
+    "dist:mac": "electron-packager . brushup --overwrite --platform=darwin --arch=x64 --prune=true --out=dist",
+    "dist:all": "npm run clean && npm run dist:linux && npm run dist:mac && npm run dist:win"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "2.0.10",
+    "electron-packager": "^12.1.2"
+  }
 }

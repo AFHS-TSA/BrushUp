@@ -1,0 +1,27 @@
+{
+  "name": "brushup",
+  "version": "1.0.0",
+  "description": "TSA Software Dev Project 2018-19",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ajv": "^6.5.4",
+    "ajv-keywords": "^3.2.0",
+    "jshint": "^2.9.6",
+    "standard": "^12.0.1"
+  },
+  "scripts": {
+    "style": "node_modules/standard/bin/cmd.js --fix",
+    "build:desktop": "npm run style desktop/BrushUp/*.js && npm run dist:all --prefix desktop/BrushUp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFHS-TSA/BrushUp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFHS-TSA/BrushUp/issues"
+  },
+  "homepage": "https://github.com/AFHS-TSA/BrushUp#readme"
+}
