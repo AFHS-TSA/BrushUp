@@ -1,19 +1,8 @@
 {
-    "name": "brush-up",
-    "version": "0.0.0",
-    "description": "BrushUp",
-    "main": "server.js",
-    "author": {
-        "name": ""
-    },
+    "name": "TSA",
+    "version": "1.0.0",
+    "private": true,
     "dependencies": {
-        "express": "~4.16.3",
-        "path": "~0.12.7",
-        "react": "~16.4.2",
-        "react-dom": "~16.4.2",
-        "ts-loader": "~4.5.0",
-        "typescript": "~2.9.2",
-        "webpack": "~4.17.1",
-        "webpack-cli": "~2.1.5"
+        "onsenui": "^2.10.4"
     }
 }
