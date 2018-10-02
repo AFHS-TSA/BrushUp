@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "acorn": "^6.0.2",
     "ajv": "^6.5.4",
     "ajv-keywords": "^3.2.0",
     "jshint": "^2.9.6",
@@ -12,7 +13,8 @@
   },
   "scripts": {
     "style": "node_modules/standard/bin/cmd.js --fix",
-    "build:desktop": "npm run style desktop/BrushUp/*.js && npm run dist:all --prefix desktop/BrushUp"
+    "lint": "node_modules/acorn/bin/acorn --silent desktop/BrushUp/*.js",
+    "build:desktop": "npm run style desktop/BrushUp/*.js && npm run dist:linux --prefix desktop/BrushUp"
   },
   "repository": {
     "type": "git",
