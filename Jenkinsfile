@@ -19,8 +19,14 @@ pipeline {
     }
   }
   post {
-    always {
-      telegramSend 'Built env.BUILD_TAG'
-    } 
+    success {
+      telegramSend 'The Latest Build of Brushup succeeded http://65.190.131.62:8080/job/SoftwareDev-2019/'
+    }
+    failure {
+      telegramSend 'The Latest Build of Brushup failed http://65.190.131.62:8080/job/SoftwareDev-2019/'
+    }
+    aborted {
+      telegramSend 'Someone aborted the recent Brushup build http://65.190.131.62:8080/job/SoftwareDev-2019/'
+    }
   }
 }
