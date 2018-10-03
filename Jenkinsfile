@@ -20,7 +20,7 @@ pipeline {
   }
   post {
     always {
-      telegramSend 'Testing'
+      telegramSend 'Built ${env.BUILD_TAG} ${env.BUILD_URL}'
     } 
   }
 }
