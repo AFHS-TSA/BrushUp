@@ -18,4 +18,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      telegramSend 'Testing'
+    } 
+  }
 }
