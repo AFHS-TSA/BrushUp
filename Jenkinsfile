@@ -20,7 +20,7 @@ pipeline {
   }
   post {
     success {
-      telegramSend 'The Latest Build of Brushup succeeded http://65.190.131.62:8080/job/SoftwareDev-2019/'
+      telegramSend 'The Latest Build of Brushup succeeded ${env.BUILD_NUMBER}'
     }
     failure {
       telegramSend 'The Latest Build of Brushup failed http://65.190.131.62:8080/job/SoftwareDev-2019/'
