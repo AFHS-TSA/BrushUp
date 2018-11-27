@@ -16,7 +16,9 @@
   "scripts": {
     "style": "node_modules/standard/bin/cmd.js --fix",
     "lint": "node_modules/acorn/bin/acorn --silent desktop/BrushUp/*.js",
-    "build:desktop": "npm run style desktop/BrushUp/*.js && npm run dist:linux --prefix desktop/BrushUp"
+    "build:desktop": "npm run dist:linux --prefix desktop/BrushUp",
+    "build:mobile": "npm run dist:all --prefix mobile/BrushUp",
+    "build:all": "npm run build:desktop && npm run build:mobile"
   },
   "repository": {
     "type": "git",

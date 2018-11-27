@@ -1,8 +1,27 @@
 {
-    "name": "TSA",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-        "onsenui": "^2.10.4"
+  "name": "TSA",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cordova-android": "^6.2.2",
+    "cordova-ios": "4.2.0",
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-windows": "4.4.2",
+    "onsenui": "^2.10.4"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "windows",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {}
     }
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "dist:android": "cordova build android",
+    "dist:all": "npm run dist:android"
+  }
 }

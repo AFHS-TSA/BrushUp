@@ -7,26 +7,26 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('lint') {
+    stage('checkDeps') {
       steps {
-        sh 'npm run lint'
+        sh './checkDeps.sh'
       }
     }
     stage('build') {
       steps {
-        sh 'npm run build:desktop'
+        sh 'npm run build:all'
       }
     }
   }
-  post {
-    success {
-      telegramSend 'The Latest Build of Brushup succeeded ${env.BUILD_NUMBER}'
-    }
-    failure {
-      telegramSend 'The Latest Build of Brushup failed http://65.190.131.62:8080/job/SoftwareDev-2019/'
-    }
-    aborted {
-      telegramSend 'Someone aborted the recent Brushup build http://65.190.131.62:8080/job/SoftwareDev-2019/'
-    }
-  }
+  /* post { */
+  /*   success { */
+  /*     telegramSend 'The Latest Build of Brushup succeeded ${env.BUILD_NUMBER}' */
+  /*   } */
+  /*   failure { */
+  /*     telegramSend 'The Latest Build of Brushup failed http://65.190.131.62:8080/job/SoftwareDev-2019/' */
+  /*   } */
+  /*   aborted { */
+  /*     telegramSend 'Someone aborted the recent Brushup build http://65.190.131.62:8080/job/SoftwareDev-2019/' */
+  /*   } */
+  /* } */
 }
